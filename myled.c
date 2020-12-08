@@ -68,7 +68,7 @@ static ssize_t led_write(struct file* filp, const char* buf, size_t count, loff_
 		case 2 :
 			while(i <= num){
 				gpio_base[7] = 1 << 22;
-				gpio_base[7] = 1<< 24;
+				gpio_base[7] = 1 << 24;
 				ssleep(1);
 				gpio_base[10] = 1 << 22;
 				gpio_base[10] = 1 << 24;
