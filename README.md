@@ -14,8 +14,8 @@
 ・Ubuntu 18.04　　
 
 ## 配線の様子
-今回はGPIO22,23,24,25を使用。
-
+今回はGPIO22,23,24,25を使用。  
+<img src="https://user-images.githubusercontent.com/72923980/101601938-a70e9200-3a40-11eb-8e78-276d45d56692.jpg" width="200>
 
 ## 動作内容
 0 : 全て消灯  
@@ -45,7 +45,7 @@ $ sudo insmod myled.ko
 $ sudo chmod 666 /dev/myled0
 ~~~  
 実行  
-例) 0の動作を行う場合  
+例）0の動作を行う場合  
 ~~~
 $ echo 0 > /dev/myled0
 ~~~   
