@@ -46,7 +46,7 @@ static ssize_t led_write(struct file* filp, const char* buf, size_t count, loff_
 			gpio_base[10] = 1 << 25;
 			break;
 
-		/*４つ同時に点灯*/
+		/*４つ同時に点滅*/
 		case 1 :
 			while(i <= num){
 				gpio_base[7] = 1 << 22;
@@ -64,7 +64,7 @@ static ssize_t led_write(struct file* filp, const char* buf, size_t count, loff_
 			}
 			break;
 
-		/*２つずつ点灯*/
+		/*２つずつ点滅*/
 		case 2 :
 			while(i <= num){
 				gpio_base[7] = 1 << 22;
